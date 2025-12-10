@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📁 File Sharing App</h1>
+            <p>Upload and share files locally</p>
+        </header>
+
+        <main>
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <h2>Upload File</h2>
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="fileInput" hidden>
+                    <label for="fileInput" class="upload-label">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p>Click to select a file or drag and drop</p>
+                        <span class="file-info">Max file size: 100MB</span>
+                    </label>
+                </div>
+                <button id="uploadBtn" class="btn btn-primary" disabled>Upload File</button>
+                <div id="uploadProgress" class="progress-container hidden">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <span id="progressText">0%</span>
+                </div>
+                <div id="uploadStatus" class="status-message"></div>
+            </section>
+
+            <!-- Files List Section -->
+            <section class="files-section">
+                <div class="section-header">
+                    <h2>Uploaded Files</h2>
+                    <button id="refreshBtn" class="btn btn-secondary">🔄 Refresh</button>
+                </div>
+                <div id="filesList" class="files-list">
+                    <p class="loading">Loading files...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
