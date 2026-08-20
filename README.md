@@ -10,12 +10,19 @@ The project was developed to understand and implement concepts such as REST APIs
 ---
 
 ✨ Key Features
+
 📤 Secure File Upload — Upload files through a simple web interface.
+
 🔑 Token-Based Sharing— Generate a unique token for each shared file.
+
 📥 Controlled Download — Files can only be accessed using the valid token.
+
 🗄️ File Metadata Storage — File information and sharing details are stored in MongoDB.
+
 🌐 RESTful Backend — Dedicated routes for uploading, sharing, and downloading files.
+
 🎨 Simple Web Interface — Clean frontend built with HTML, CSS, and JavaScript.
+
 🛡️ Controlled File Access — Prevents direct access to shared files without the required token.
 
 ---
@@ -60,6 +67,7 @@ The project was developed to understand and implement concepts such as REST APIs
 ---
 
 🔄 File Sharing Workflow
+
 Upload File
      │
      ▼
@@ -87,6 +95,7 @@ Download File
 ---
 
 🛠️ Tech Stack
+
 Frontend
 * HTML5
 * CSS3
@@ -138,6 +147,7 @@ SecureFileSharing/
 ---
 
 📌 Main Modules
+
 📤 Upload Module
 Handles file uploads from the user and stores the uploaded files in the server's designated storage directory.
 
@@ -153,6 +163,7 @@ Maintains file-related metadata using MongoDB and Mongoose.
 ---
 
 ⚙️ Installation & Setup
+
 1. Clone the repository
 
 2. Install dependencies
@@ -183,6 +194,7 @@ http://localhost:3000
 ---
 
 🧪 Example Usage
+
 Step 1 — Upload
 Select a file through the web interface and upload it to the application.
 Step 2 — Generate Share Token
@@ -221,6 +233,7 @@ This provides an additional layer of access control for shared files.
 ---
 
 🎯 What I Learned
+
 Building this project helped me gain practical experience with:
 * Building backend applications using Node.js and Express
 * Designing and organizing REST API routes
@@ -234,6 +247,7 @@ Building this project helped me gain practical experience with:
 ---
 
 🚀 Future Improvements
+
 Some improvements that can be added in future versions:
 * ⏳ Token expiration
 * 👤 User authentication and authorization
@@ -247,6 +261,7 @@ Some improvements that can be added in future versions:
 ---
 
 🤝 Contributing :
+
 Contributions, suggestions, and improvements are welcome.
 1. Fork the repository
 2. Create a new branch
