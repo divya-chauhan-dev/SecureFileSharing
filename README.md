@@ -154,9 +154,6 @@ Maintains file-related metadata using MongoDB and Mongoose.
 
 ⚙️ Installation & Setup
 1. Clone the repository
-bash
-git clone https://github.com/YOUR-USERNAME/SecureFileSharing.git
-cd SecureFileSharing
 
 2. Install dependencies
 bash
